@@ -1,0 +1,445 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Ponerlo para la pagina de los jugadores
+html{
+scroll-behavior: smooth;
+}
+*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+h4{font-size: 1.5em;}
+p{font-size: 1em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet ;}
+
+header{
+    background-color: rgb(240, 240, 240);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.35em;
+}
+
+header img{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#somos-campeones .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#copas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    
+}
+
+#copas .container{
+   padding: 150px 12px;
+}
+
+#copas h2{
+margin-top: 0;
+font-size: 3.2em;
+}
+
+#copas p{
+    display: none;
+}
+
+#copas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+#tienda{
+    margin: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+#tienda .container{
+    height: 25em;
+    border-radius: 12px;
+    border: #343434 solid;
+    background-image: linear-gradient(
+        0deg,
+        rgb(7, 0, 75),
+        rgb(212, 210, 210)
+    )
+}
+
+#tienda h3{
+    font-size: 3em;
+    text-align: center;
+color: rgb(255, 255, 255);
+margin-top: 5px;
+margin-block: 14px;
+}
+
+#tienda img{
+    align-items: center;
+    width: 20vh;
+    height: 20vh;
+    margin: 1%;
+    margin-top: 35px;
+   margin-inline: 2.5em;
+   border-radius: 25px;
+}
+
+@media (min-width: 720px){
+    header{
+position: fixed;
+width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+#hero h1{
+    font-size: 5em;
+}
+
+    #somos-campeones .container{
+display: flex;
+justify-content: space-evenly;
+    }
+
+    #somos-campeones .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-campeones .img-container{
+        background-image: url(/IMAGENES/Beatles.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+#copas .copas{
+    display: flex;
+    justify-content: center;
+}
+
+#copas p{
+    display: block;
+    margin-bottom: 30px;
+}
+ 
+#copas h2{
+    font-size: 4em;
+}
+#copas h3{
+    margin-top: 0;
+}
+
+#copas .carta{
+    padding: 15px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgb(20,20,20);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+/*CORTAS IMAGENES*/
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../IMAGENES/Beatles.jpg);
+}
+
+#tienda .container{
+    height: 20em;
+    border-radius: 12px;
+    border: #343434 solid;
+    margin: 5%;
+    margin-left: 10px;
+    background-image: linear-gradient(
+        0deg,
+        rgb(7, 0, 75),
+        rgb(212, 210, 210)
+    )
+}
+
+#tienda h3{
+    font-size: 3em;
+    text-align: center;
+color: rgb(255, 255, 255);
+margin-top: 5px;
+margin-block: 14px;
+}
+
+#tienda img{
+    align-items: center;
+    width: 16vh;
+    height: 16vh;
+    margin: 1%;
+    margin-top: 35px;
+   margin-inline: 2.2em;
+   border-radius: 25px;
+   margin-left: 45px;
+}
+}
+
+/*
+
+SOLO PARA QUE SE VAYA LA TIENDA
+
+*/
+@media (max-width: 1599px) {
+    #tienda .container{
+        display: none;
+    }
+}
+
+hr{
+    width: 500px;   
+}
+
+
+.historia{
+    font-size: 50px;
+}
+.inicios{
+    width: 20cm;
+    height: 13cm;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../imagenes/unnamed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer-contenido{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 1200px;
+margin: auto;
+margin-top: 100;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.footer-box .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer-box .terminos p{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 15px;
+}
+
+.footer-box h4{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.footer-box a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.footer-box a:hover{
+    opacity: 0.8;
+}
+
+.footer-box a .fab{
+    font-size: 20px;
+}
+
+.box-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box-copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+
+/* HOVER ME SIRVE PARA MARCAR CON OTRO COLOR CUANDO PASO POR ARRIBA DE ALGO
+.nav-menu:hover{
+    background-color: #343434;
+}
+.footer-box a:hover{
+    background-color: red;
+}
+
+
